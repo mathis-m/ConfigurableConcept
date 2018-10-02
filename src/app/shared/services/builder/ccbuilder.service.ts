@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {CCConfigLoaderService} from '../config/ccconfig-loader.service';
 import { Router } from '@angular/router';
-import {ICCProjectConfig} from '../../models/CCConfig/ICCProjectConfig';
+import {ICCProjectConfig} from '../../models/CCBasics/CCConfig/ICCProjectConfig';
 import {ICCProject} from '../../models/CCBasics/ICCProject';
 import {Observable, of} from 'rxjs';
 

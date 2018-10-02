@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
-import {ICCProjectConfig} from '../../models/CCConfig/ICCProjectConfig';
+import {ICCProjectConfig} from '../../models/CCBasics/CCConfig/ICCProjectConfig';
 import {ICCProject} from '../../models/CCBasics/ICCProject';
-import {ICCPageConfig} from '../../models/CCConfig/ICCPageConfig';
+import {ICCPageConfig} from '../../models/CCBasics/CCConfig/ICCPageConfig';
 import {FakeDateProviderService} from '../data/fake-date-provider.service';
 
 @Injectable({

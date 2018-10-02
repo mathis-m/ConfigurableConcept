@@ -1,6 +1,8 @@
 import {Injectable} from '@angular/core';
 import {Observable, of} from 'rxjs';
-import {ICCProjectConfig} from '../../models/CCConfig/ICCProjectConfig';
+import {ICCProjectConfig} from '../../models/CCBasics/CCConfig/ICCProjectConfig';
+import {CCPicture} from '../../models/CCBasics/CCPicture';
+import {CCPictureConfig} from '../../models/CRresource/CCPictureConfig';
 
 @Injectable({
   providedIn: 'root'
@@ -41,6 +43,19 @@ export class FakeDateProviderService {
               elementType: 'text',
               sizeEm: 2,
               content: 'Hello to CC'
+            }
+          ]
+        },
+        {
+          pageName: 'Welcome',
+          pagePath: 'landing',
+          inMenu: 'false',
+          pageID: 'testPage',
+          pageRole: 'Home',
+          elements: [
+            {
+              elementType: 'welcome',
+              pictureAsBackground: 'true',
             }
           ]
         }
