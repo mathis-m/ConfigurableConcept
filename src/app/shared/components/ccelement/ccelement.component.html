@@ -1,6 +1,9 @@
 <ng-container *ngIf="elementConfig.elementType == 'text'">
   <app-cctext [elementConfig]="elementConfig"></app-cctext>
 </ng-container>
+<ng-container *ngIf="elementConfig.elementType == 'welcome'">
+  <app-ccwelcome [elementConfig]="elementConfig"></app-ccwelcome>
+</ng-container>
 <ng-container *ngIf="elementConfig.elementType != 'text'">
   <ng-container *ngIf="elementConfig.content">
     {{elementConfig.content}}

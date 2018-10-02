@@ -1,10 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
-import {ICCPageConfig} from '../../models/CCConfig/ICCPageConfig';
+import {ICCPageConfig} from '../../models/CCBasics/CCConfig/ICCPageConfig';
 import {CCConfigLoaderService} from '../../services/config/ccconfig-loader.service';
 import {ICCPage} from '../../models/CCBasics/ICCPage';
 import {CCBuilderService} from '../../services/builder/ccbuilder.service';
-import {ICCProjectConfig} from '../../models/CCConfig/ICCProjectConfig';
+import {ICCProjectConfig} from '../../models/CCBasics/CCConfig/ICCProjectConfig';
 import {ICCTextConfig} from '../../models/CCBasics/ICCTextConfig';
 
 @Component({

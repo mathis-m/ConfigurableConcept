@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {ICCElement} from '../../models/CCBasics/ICCElement';
-import {ICCElementConfig} from '../../models/CCConfig/ICCElementConfig';
+import {ICCElementConfig} from '../../models/CCBasics/CCConfig/ICCElementConfig';
 
 @Component({
   selector: 'app-ccelement',

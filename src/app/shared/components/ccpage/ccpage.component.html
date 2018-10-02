@@ -3,9 +3,11 @@
     <h1 [style.margin]="0">{{pageConfig.pageName}}</h1>
     <nav class="cc-nav">
       <ng-container *ngFor="let page of projectConfig.pages">
-        <div class="cc-nav-item">
-          <div (click)="navigate(page.pagePath)">{{page.pageName}}</div>
-        </div>
+        <ng-container *ngIf="page.inMenu !== 'false'">
+          <div class="cc-nav-item">
+            <div (click)="navigate(page.pagePath)">{{page.pageName}}</div>
+          </div>
+        </ng-container>
       </ng-container>
     </nav>
     <ng-container *ngFor="let element of pageConfig.elements">

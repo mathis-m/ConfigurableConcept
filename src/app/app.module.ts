@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { CCPageComponent } from './shared/components/ccpage/ccpage.component';
 import { CCElementComponent } from './shared/components/ccelement/ccelement.component';
 import { CCTextComponent } from './shared/components/cctext/cctext.component';
+import { CCWelcomeComponent } from './shared/components/ccwelcome/ccwelcome.component';
 
 const routes: Routes = [
   { path: '**', component: CCPageComponent }
@@ -17,7 +18,8 @@ const routes: Routes = [
     AppComponent,
     CCPageComponent,
     CCElementComponent,
-    CCTextComponent
+    CCTextComponent,
+    CCWelcomeComponent
   ],
   imports: [
     BrowserModule,
