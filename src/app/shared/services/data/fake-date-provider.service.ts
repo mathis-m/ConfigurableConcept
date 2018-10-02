@@ -26,6 +26,7 @@ export class FakeDateProviderService {
             },
             {
               elementType: 'text',
+              sizeEm: 3,
               content: 'nice try'
             }
           ]
@@ -38,6 +39,7 @@ export class FakeDateProviderService {
           elements: [
             {
               elementType: 'text',
+              sizeEm: 2,
               content: 'Hello to CC'
             }
           ]

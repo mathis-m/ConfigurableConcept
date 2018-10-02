@@ -1,7 +1,13 @@
-<ng-container *ngIf="elementConfig.content">
-  {{elementConfig.content}}
+<ng-container *ngIf="elementConfig.elementType == 'text'">
+  <app-cctext [elementConfig]="elementConfig"></app-cctext>
 </ng-container>
-<ng-container *ngFor="let child of elementConfig.childElementConfig">
-  <app-ccelement [elementConfig]="child">
-  </app-ccelement>
+<ng-container *ngIf="elementConfig.elementType != 'text'">
+  <ng-container *ngIf="elementConfig.content">
+    {{elementConfig.content}}
+  </ng-container>
+  <ng-container *ngFor="let child of elementConfig.childElementConfig">
+    <app-ccelement [elementConfig]="child">
+    </app-ccelement>
+  </ng-container>
+
 </ng-container>

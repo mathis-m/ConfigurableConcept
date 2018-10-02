@@ -1,10 +1,11 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {ICCElement} from '../../models/CCBasics/ICCElement';
+import {ICCElementConfig} from '../../models/CCConfig/ICCElementConfig';
 
 @Component({
   selector: 'app-ccelement',
   templateUrl: './ccelement.component.html',
-  styleUrls: ['./ccelement.component.css']
+  styleUrls: ['./ccelement.component.scss']
 })
 export class CCElementComponent implements OnInit, ICCElement {
 
