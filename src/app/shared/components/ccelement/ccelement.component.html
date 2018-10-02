@@ -1,0 +1,7 @@
+<ng-container *ngIf="elementConfig.content">
+  {{elementConfig.content}}
+</ng-container>
+<ng-container *ngFor="let child of elementConfig.childElementConfig">
+  <app-ccelement [elementConfig]="child">
+  </app-ccelement>
+</ng-container>

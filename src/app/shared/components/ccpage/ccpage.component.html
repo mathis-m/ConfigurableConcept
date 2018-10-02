@@ -1,0 +1,6 @@
+<ng-container *ngIf="pageConfig">
+  <h1>{{pageConfig.pageName}}</h1>
+  <ng-container *ngFor="let element of pageConfig.elements">
+    <app-ccelement [elementConfig]="element"></app-ccelement>
+  </ng-container>
+</ng-container>
