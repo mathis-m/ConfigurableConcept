@@ -1,5 +1,5 @@
 export interface ICCElementConfig {
   elementType: string;
   content?: string;
-  childElementConfig?: ICCElementConfig;
+  childElementConfigs?: ICCElementConfig[];
 }

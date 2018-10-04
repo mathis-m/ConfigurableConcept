@@ -1,9 +1,8 @@
 import {ICCElementConfig} from '../CCBasics/CCConfig/ICCElementConfig';
-import {ICCResourceConfig} from '../CRresource/ICCResourceConfig';
-import {ICCResource} from '../CRresource/ICCResource';
+import {ICCResourceConfig} from '../CCRresource/ICCResourceConfig';
+import {ICCPictureConfig} from '../CCPicture/ICCPictureConfig';
+import {ICCTextConfig} from '../CCBasics/CCConfig/ICCTextConfig';
 
-export interface ICCWelcomeConfig extends ICCElementConfig {
-  pictureAsBackground: boolean;
-  pictureConfig: ICCResourceConfig;
-  picture: ICCResource;
+export interface ICCWelcomeConfig extends ICCElementConfig, ICCResourceConfig {
+  childElementConfigs: (ICCPictureConfig | ICCTextConfig)[];
 }
