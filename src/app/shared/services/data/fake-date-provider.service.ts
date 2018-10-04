@@ -1,8 +1,8 @@
 import {Injectable} from '@angular/core';
 import {Observable, of} from 'rxjs';
 import {ICCProjectConfig} from '../../models/CCBasics/CCConfig/ICCProjectConfig';
-import {CCPicture} from '../../models/CCBasics/CCPicture';
-import {CCPictureConfig} from '../../models/CRresource/CCPictureConfig';
+import {CCPictureResource} from '../../models/CCRresource/ICCPictureResource';
+import {CCPictureConfig} from '../../models/CCPicture/CCPictureConfig';
 
 @Injectable({
   providedIn: 'root'
@@ -55,7 +55,25 @@ export class FakeDateProviderService {
           elements: [
             {
               elementType: 'welcome',
-              pictureAsBackground: 'true',
+              childElementConfigs: [
+                {
+                  elementType: 'text',
+                  sizeEm: 2,
+                  content: 'Hello to CC'
+                },
+                {
+                  elementType: 'text',
+                  sizeEm: 2.5,
+                  content: 'Hello to CC'
+                },
+                {
+                  elementType: 'pic',
+                  resource: {
+                    name: 'test pic',
+                    location: 'http://www.corporate-eye.com/main/wp-content/uploads/2013/01/international-presentations.jpg'
+                  }
+                }
+              ]
             }
           ]
         }

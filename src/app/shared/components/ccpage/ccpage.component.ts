@@ -5,7 +5,7 @@ import {CCConfigLoaderService} from '../../services/config/ccconfig-loader.servi
 import {ICCPage} from '../../models/CCBasics/ICCPage';
 import {CCBuilderService} from '../../services/builder/ccbuilder.service';
 import {ICCProjectConfig} from '../../models/CCBasics/CCConfig/ICCProjectConfig';
-import {ICCTextConfig} from '../../models/CCBasics/ICCTextConfig';
+import {ICCTextConfig} from '../../models/CCBasics/CCConfig/ICCTextConfig';
 
 @Component({
   selector: 'app-ccpage',

@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {ICCText} from '../../models/CCBasics/ICCText';
-import {ICCTextConfig} from '../../models/CCBasics/ICCTextConfig';
+import {ICCTextConfig} from '../../models/CCBasics/CCConfig/ICCTextConfig';
 
 @Component({
   selector: 'app-cctext',

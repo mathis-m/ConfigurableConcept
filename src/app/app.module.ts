@@ -8,6 +8,7 @@ import { CCPageComponent } from './shared/components/ccpage/ccpage.component';
 import { CCElementComponent } from './shared/components/ccelement/ccelement.component';
 import { CCTextComponent } from './shared/components/cctext/cctext.component';
 import { CCWelcomeComponent } from './shared/components/ccwelcome/ccwelcome.component';
+import { CCPictureComponent } from './shared/components/ccpicture/ccpicture.component';
 
 const routes: Routes = [
   { path: '**', component: CCPageComponent }
@@ -19,7 +20,8 @@ const routes: Routes = [
     CCPageComponent,
     CCElementComponent,
     CCTextComponent,
-    CCWelcomeComponent
+    CCWelcomeComponent,
+    CCPictureComponent
   ],
   imports: [
     BrowserModule,

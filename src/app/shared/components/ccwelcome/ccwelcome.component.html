@@ -1,3 +1,6 @@
-<ng-container>
-
+<ng-container *ngFor="let config of elementConfig.childElementConfigs">
+  <ng-container *ngIf="config.elementType === 'pic'">
+    <app-ccpicture></app-ccpicture>
+  </ng-container>
+  <app-ccelement [elementConfig]="config"></app-ccelement>
 </ng-container>
