@@ -1,9 +1,9 @@
-import {Injectable} from '@angular/core';
-import {Observable, of} from 'rxjs';
-import {ICCProjectConfig} from '../../models/CCBasics/CCConfig/ICCProjectConfig';
+import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
+import { ICCProjectConfig } from '../../models/CCBasics/CCConfig/ICCProjectConfig';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class FakeDateProviderService {
   constructor() {
@@ -22,14 +22,14 @@ export class FakeDateProviderService {
           elements: [
             {
               elementType: 'text',
-              content: 'test fick dich '
+              content: 'test fick dich ',
             },
             {
               elementType: 'text',
               sizeEm: 3,
-              content: 'nice try'
-            }
-          ]
+              content: 'nice try',
+            },
+          ],
         },
         {
           pageName: 'Home',
@@ -40,9 +40,9 @@ export class FakeDateProviderService {
             {
               elementType: 'text',
               sizeEm: 2,
-              content: 'Hello to CC'
-            }
-          ]
+              content: 'Hello to CC',
+            },
+          ],
         },
         {
           pageName: 'Welcome',
@@ -57,25 +57,25 @@ export class FakeDateProviderService {
                 {
                   elementType: 'text',
                   sizeEm: 2,
-                  content: 'get started with CC'
+                  content: 'get started with CC',
                 },
                 {
                   elementType: 'text',
                   sizeEm: 2.5,
-                  content: 'Configurable Concept'
+                  content: 'Configurable Concept',
                 },
                 {
                   elementType: 'pic',
                   resource: {
                     name: 'test pic',
-                    location: 'http://www.corporate-eye.com/main/wp-content/uploads/2013/01/international-presentations.jpg'
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
+                    location: 'http://www.corporate-eye.com/main/wp-content/uploads/2013/01/international-presentations.jpg',
+                  },
+                },
+              ],
+            },
+          ],
+        },
+      ],
     });
   }
 }

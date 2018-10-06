@@ -1,13 +1,11 @@
-import {Injectable} from '@angular/core';
-import {ICCProjectConfig} from '../../models/CCBasics/CCConfig/ICCProjectConfig';
-import {ICCProject} from '../../models/CCBasics/ICCProject';
-import {ICCPageConfig} from '../../models/CCBasics/CCConfig/ICCPageConfig';
-import {FakeDateProviderService} from '../data/fake-date-provider.service';
+import { Injectable } from '@angular/core';
+import { ICCPageConfig } from '../../models/CCBasics/CCConfig/ICCPageConfig';
+import { FakeDateProviderService } from '../data/fake-date-provider.service';
 
 @Injectable({
   providedIn: 'root'
 })
-export class CCConfigLoaderService  {
+export class CCConfigLoaderService {
   constructor(private dataProvider: FakeDateProviderService) {
   }
 

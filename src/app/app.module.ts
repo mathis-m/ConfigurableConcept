@@ -1,14 +1,14 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import {RouterModule, Routes} from '@angular/router';
-
+import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
-import { CCPageComponent } from './shared/components/ccpage/ccpage.component';
 import { CCElementComponent } from './shared/components/ccelement/ccelement.component';
+import { CCPageComponent } from './shared/components/ccpage/ccpage.component';
+import { CCPictureComponent } from './shared/components/ccpicture/ccpicture.component';
 import { CCTextComponent } from './shared/components/cctext/cctext.component';
 import { CCWelcomeComponent } from './shared/components/ccwelcome/ccwelcome.component';
-import { CCPictureComponent } from './shared/components/ccpicture/ccpicture.component';
+
+
 
 const routes: Routes = [
   { path: '**', component: CCPageComponent }
@@ -21,13 +21,13 @@ const routes: Routes = [
     CCElementComponent,
     CCTextComponent,
     CCWelcomeComponent,
-    CCPictureComponent
+    CCPictureComponent,
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
