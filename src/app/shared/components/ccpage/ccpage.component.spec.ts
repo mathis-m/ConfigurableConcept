@@ -8,9 +8,9 @@ describe('CCPageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CCPageComponent ]
+      declarations: [CCPageComponent],
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

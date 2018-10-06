@@ -8,9 +8,9 @@ describe('CCWelcomeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CCWelcomeComponent ]
+      declarations: [CCWelcomeComponent],
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

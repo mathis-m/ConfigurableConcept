@@ -1,4 +1,4 @@
-import {ICCResourceConfig} from './ICCResourceConfig';
+import { ICCResourceConfig } from './ICCResourceConfig';
 
 export interface ICCResource {
   name: string;

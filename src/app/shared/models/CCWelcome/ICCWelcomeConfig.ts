@@ -4,5 +4,5 @@ import { ICCPictureConfig } from '../CCPicture/ICCPictureConfig';
 import { ICCResourceConfig } from '../CCRresource/ICCResourceConfig';
 
 export interface ICCWelcomeConfig extends ICCElementConfig, ICCResourceConfig {
-  childElementConfigs: (ICCPictureConfig | ICCTextConfig)[];
+  childElementConfigs: Array<(ICCPictureConfig | ICCTextConfig)>;
 }

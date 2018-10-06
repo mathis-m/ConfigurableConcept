@@ -8,9 +8,9 @@ describe('CCPictureComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CCPictureComponent ]
+      declarations: [CCPictureComponent],
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

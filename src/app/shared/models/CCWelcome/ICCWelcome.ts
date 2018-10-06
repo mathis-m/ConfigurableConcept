@@ -1,7 +1,7 @@
-import {ICCElement} from '../CCBasics/ICCElement';
-import {ICCWelcomeConfig} from './ICCWelcomeConfig';
-import {ICCPictureConfig} from '../CCPicture/ICCPictureConfig';
-import {ICCTextConfig} from '../CCBasics/CCConfig/ICCTextConfig';
+import { ICCTextConfig } from '../CCBasics/CCConfig/ICCTextConfig';
+import { ICCElement } from '../CCBasics/ICCElement';
+import { ICCPictureConfig } from '../CCPicture/ICCPictureConfig';
+import { ICCWelcomeConfig } from './ICCWelcomeConfig';
 
 export interface ICCWelcome extends ICCElement {
   elementConfig: ICCWelcomeConfig;

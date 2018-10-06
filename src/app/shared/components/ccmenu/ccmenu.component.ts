@@ -1,21 +1,18 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {ICCMenu} from '../../models/CCMenu/ICCMenu';
-import {ICCMenuConfig} from '../../models/CCMenu/ICCMenuConfig';
-import {Router} from '@angular/router';
+import { Component, Input, OnInit } from '@angular/core';
+import { ICCMenu } from '../../models/CCMenu/ICCMenu';
+import { ICCMenuConfig } from '../../models/CCMenu/ICCMenuConfig';
 
 @Component({
   selector: 'app-ccmenu',
   templateUrl: './ccmenu.component.html',
-  styleUrls: ['./ccmenu.component.scss']
+  styleUrls: ['./ccmenu.component.scss'],
 })
 export class CCMenuComponent implements OnInit, ICCMenu {
-  @Input()elementConfig: ICCMenuConfig;
-
-  constructor() { }
+  @Input() elementConfig: ICCMenuConfig;
 
   ngOnInit() {
-    debugger;
-    console.log(this.elementConfig);
+    // debugger;
+    // console.log(this.elementConfig);
   }
 
 }
