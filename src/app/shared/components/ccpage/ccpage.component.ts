@@ -25,6 +25,7 @@ export class CCPageComponent implements OnInit, ICCPage {
   }
 
   ngOnInit() {
+    this.router.events.subscribe(() => this.loadPageConfig());
   }
 
   private setPageConfig(projectConfig: ICCProjectConfig) {
@@ -35,10 +36,6 @@ export class CCPageComponent implements OnInit, ICCPage {
     if (~findIndex) {
       this.pageConfig = pageConfigs[findIndex];
     }
-  }
-  navigate(path: string) {
-    this.router.events.subscribe(() => this.loadPageConfig());
-    this.router.navigate([`/${path}`]);
   }
 
 
