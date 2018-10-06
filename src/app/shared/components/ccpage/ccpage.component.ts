@@ -28,7 +28,7 @@ export class CCPageComponent implements ICCPage {
   private setPageConfig(projectConfig: ICCProjectConfig) {
     this.projectConfig = projectConfig;
     const pageConfigs = projectConfig.pages;
-    const findIndex = pageConfigs.findIndex((el) => el.pagePath === this.router.url.substring(1));
+    const findIndex = pageConfigs.findIndex((el) => el.pagePath === '/' + this.router.url.substring(1));
     if (~findIndex) {
       this.pageConfig = pageConfigs[findIndex];
     }

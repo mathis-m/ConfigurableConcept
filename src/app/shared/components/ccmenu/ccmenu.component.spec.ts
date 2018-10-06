@@ -8,9 +8,9 @@ describe('CCMenuComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CCMenuComponent ]
+      declarations: [CCMenuComponent],
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

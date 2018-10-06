@@ -5,12 +5,10 @@ import { ICCMenuConfig } from '../../models/CCMenu/ICCMenuConfig';
 @Component({
   selector: 'app-ccmenu',
   templateUrl: './ccmenu.component.html',
-  styleUrls: ['./ccmenu.component.scss']
+  styleUrls: ['./ccmenu.component.scss'],
 })
 export class CCMenuComponent implements OnInit, ICCMenu {
   @Input() elementConfig: ICCMenuConfig;
-
-  constructor() { }
 
   ngOnInit() {
     // debugger;
