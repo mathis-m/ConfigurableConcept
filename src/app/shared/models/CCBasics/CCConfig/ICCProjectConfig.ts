@@ -1,4 +1,4 @@
-import {ICCPageConfig} from './ICCPageConfig';
+import { ICCPageConfig } from './ICCPageConfig';
 
 export interface ICCProjectConfig {
   companyName: string;

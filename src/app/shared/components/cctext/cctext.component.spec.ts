@@ -8,9 +8,9 @@ describe('CCTextComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CCTextComponent ]
+      declarations: [CCTextComponent],
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

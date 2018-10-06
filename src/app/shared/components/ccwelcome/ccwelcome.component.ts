@@ -15,7 +15,7 @@ export class CCWelcomeComponent implements OnInit, ICCWelcome {
   childConfigs: { sub_text: ICCTextConfig; picture: ICCPictureConfig; head_text: ICCTextConfig };
 
   constructor() {
-    console.log(this.elementConfig);
+    // console.log(this.elementConfig);
     this.childConfigs = {
       sub_text: undefined,
       picture: undefined,

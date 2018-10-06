@@ -1,7 +1,6 @@
-import {ICCElementConfig} from './CCConfig/ICCElementConfig';
+import { ICCElementConfig } from './CCConfig/ICCElementConfig';
 
 export interface ICCElement {
   elementConfig: ICCElementConfig;
   loadElementConfig?: () => void;
 }
-

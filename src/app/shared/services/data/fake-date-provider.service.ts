@@ -6,8 +6,6 @@ import { ICCProjectConfig } from '../../models/CCBasics/CCConfig/ICCProjectConfi
   providedIn: 'root',
 })
 export class FakeDateProviderService {
-  constructor() {
-  }
 
   public getProjectConfig(): Observable<ICCProjectConfig> {
     return of({
@@ -16,7 +14,7 @@ export class FakeDateProviderService {
       pages: [
         {
           pageName: 'testPage',
-          pagePath: 'test',
+          pagePath: '/test',
           pageID: 'testPage',
           pageRole: 'some',
           elements: [
@@ -33,7 +31,7 @@ export class FakeDateProviderService {
         },
         {
           pageName: 'Home',
-          pagePath: '',
+          pagePath: '/',
           pageID: 'testPage',
           pageRole: 'Home',
           elements: [
@@ -45,9 +43,39 @@ export class FakeDateProviderService {
           ],
         },
         {
+          pageName: 'element showcase',
+          pagePath: '/showcase',
+          pageID: 'showcase',
+          pageRole: 'Home',
+          elements: [
+            {
+              elementType: 'welcome',
+              childElementConfigs: [
+                {
+                  elementType: 'text',
+                  sizeEm: 2,
+                  content: 'get started with CC',
+                },
+                {
+                  elementType: 'text',
+                  sizeEm: 2.5,
+                  content: 'Configurable Concept',
+                },
+                {
+                  elementType: 'pic',
+                  resource: {
+                    name: 'test pic',
+                    location: 'http://www.corporate-eye.com/main/wp-content/uploads/2013/01/international-presentations.jpg',
+                  },
+                },
+              ],
+            },
+          ],
+        },
+        {
           pageName: 'Welcome',
-          pagePath: 'landing',
-          inMenu: 'false',
+          pagePath: '/landing',
+          inMenu: false,
           pageID: 'testPage',
           pageRole: 'Home',
           elements: [

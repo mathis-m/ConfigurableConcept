@@ -3,14 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { CCElementComponent } from './shared/components/ccelement/ccelement.component';
+import { CCMenuComponent } from './shared/components/ccmenu/ccmenu.component';
 import { CCPageComponent } from './shared/components/ccpage/ccpage.component';
 import { CCPictureComponent } from './shared/components/ccpicture/ccpicture.component';
 import { CCTextComponent } from './shared/components/cctext/cctext.component';
 import { CCWelcomeComponent } from './shared/components/ccwelcome/ccwelcome.component';
-import { CCMenuComponent } from './shared/components/ccmenu/ccmenu.component';
 
 const routes: Routes = [
-  { path: '**', component: CCPageComponent }
+  { path: '**', component: CCPageComponent },
 ];
 
 @NgModule({
@@ -21,7 +21,7 @@ const routes: Routes = [
     CCTextComponent,
     CCWelcomeComponent,
     CCPictureComponent,
-    CCMenuComponent
+    CCMenuComponent,
   ],
   imports: [
     BrowserModule,
