@@ -1,1 +1,4 @@
-<router-outlet></router-outlet>
+<ng-container *ngIf="projectConfig !== undefined">
+  <app-ccmenu [elementConfig]="menuConfig"></app-ccmenu>
+  <router-outlet></router-outlet>
+</ng-container>

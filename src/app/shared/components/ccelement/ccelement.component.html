@@ -1,5 +1,8 @@
 <ng-container *ngIf="elementConfig.elementType == 'text'">
   <app-cctext [elementConfig]="elementConfig"></app-cctext>
+  <ng-container *ngFor="let child of elementConfig.childElementConfigs">
+    <app-ccelement [elementConfig]="child"></app-ccelement>
+  </ng-container>
 </ng-container>
 <ng-container *ngIf="elementConfig.elementType == 'welcome'">
   <app-ccwelcome [elementConfig]="elementConfig"></app-ccwelcome>
