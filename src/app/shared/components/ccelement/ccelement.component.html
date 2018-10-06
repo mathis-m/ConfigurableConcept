@@ -4,13 +4,6 @@
 <ng-container *ngIf="elementConfig.elementType == 'welcome'">
   <app-ccwelcome [elementConfig]="elementConfig"></app-ccwelcome>
 </ng-container>
-<ng-container *ngIf="elementConfig.elementType != 'text'">
-  <ng-container *ngIf="elementConfig.content">
-    {{elementConfig.content}}
-  </ng-container>
-  <ng-container *ngFor="let child of elementConfig.childElementConfigs">
-    <app-ccelement [elementConfig]="child">
-    </app-ccelement>
-  </ng-container>
-
+<ng-container *ngIf="elementConfig.elementType == 'pic'">
+  <app-ccpicture [elementConfig]="elementConfig"></app-ccpicture>
 </ng-container>

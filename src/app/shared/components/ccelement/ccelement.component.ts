@@ -12,9 +12,12 @@ export class CCElementComponent implements OnInit, ICCElement {
   @Input()elementConfig: ICCElementConfig;
   loadElementConfig: () => void;
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit() {
+    debugger;
   }
 
 

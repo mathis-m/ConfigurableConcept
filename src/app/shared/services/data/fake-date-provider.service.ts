@@ -1,8 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Observable, of} from 'rxjs';
 import {ICCProjectConfig} from '../../models/CCBasics/CCConfig/ICCProjectConfig';
-import {CCPictureResource} from '../../models/CCRresource/ICCPictureResource';
-import {CCPictureConfig} from '../../models/CCPicture/CCPictureConfig';
 
 @Injectable({
   providedIn: 'root'
@@ -59,12 +57,12 @@ export class FakeDateProviderService {
                 {
                   elementType: 'text',
                   sizeEm: 2,
-                  content: 'Hello to CC'
+                  content: 'get started with CC'
                 },
                 {
                   elementType: 'text',
                   sizeEm: 2.5,
-                  content: 'Hello to CC'
+                  content: 'Configurable Concept'
                 },
                 {
                   elementType: 'pic',

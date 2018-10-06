@@ -1,3 +1,7 @@
 <div class="cc-text" [style.font-size.em]="elementConfig.sizeEm">
   {{elementConfig.content}}
+  <ng-container *ngFor="let child of elementConfig.childElementConfigs">
+    <app-ccelement [elementConfig]="child"></app-ccelement>
+  </ng-container>
+
 </div>
