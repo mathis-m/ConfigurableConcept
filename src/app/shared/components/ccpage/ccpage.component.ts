@@ -8,9 +8,9 @@ import {ICCProjectConfig} from '../../models/CCBasics/CCConfig/ICCProjectConfig'
 @Component({
   selector: 'app-ccpage',
   templateUrl: './ccpage.component.html',
-  styleUrls: ['./ccpage.component.scss']
+  styleUrls: ['./ccpage.component.scss'],
 })
-export class CCPageComponent implements OnInit, ICCPage {
+export class CCPageComponent implements ICCPage, OnInit {
 
   public projectConfig: ICCProjectConfig;
   public pageConfig: ICCPageConfig;
@@ -36,6 +36,5 @@ export class CCPageComponent implements OnInit, ICCPage {
       this.pageConfig = pageConfigs[findIndex];
     }
   }
-
 
 }
