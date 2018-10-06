@@ -14,8 +14,7 @@ export class CCPageComponent implements ICCPage, OnInit {
 
   public projectConfig: ICCProjectConfig;
   public pageConfig: ICCPageConfig;
-  loadPageConfig = () => this.builderService.getProjectConfig().subscribe((el: any) => this.setPageConfig(el));
-
+  loadPageConfig = () => this.builderService.getProjectConfig().subscribe((el) => this.setPageConfig(el));
 
   constructor(private router: Router, private builderService: CCBuilderService) {
     this.loadPageConfig();
@@ -29,7 +28,7 @@ export class CCPageComponent implements ICCPage, OnInit {
   private setPageConfig(projectConfig: ICCProjectConfig) {
     this.projectConfig = projectConfig;
     const pageConfigs = projectConfig.pages;
-    const findIndex = pageConfigs.findIndex((el: any) => el.pagePath === this.router.url.substring(1));
+    const findIndex = pageConfigs.findIndex((el) => el.pagePath === this.router.url.substring(1));
     console.log(pageConfigs[findIndex]);
     if (~findIndex) {
       this.pageConfig = pageConfigs[findIndex];

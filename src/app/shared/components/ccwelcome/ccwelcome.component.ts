@@ -25,7 +25,7 @@ export class CCWelcomeComponent implements OnInit, ICCWelcome {
 
   ngOnInit() {
     this.elementConfig.childElementConfigs
-      .forEach((el: any) => {
+      .forEach((el) => {
         if (el.elementType === 'pic') {
           this.childConfigs.picture = el as ICCPictureConfig;
         } else {
@@ -39,6 +39,5 @@ export class CCWelcomeComponent implements OnInit, ICCWelcome {
         }
       });
   }
-
 
 }

@@ -68,7 +68,7 @@ export class FakeDateProviderService {
                   elementType: 'pic',
                   resource: {
                     name: 'test pic',
-                    location: 'http://www.corporate-eye.com/main/wp-content/uploads/2013/01/international-presentations.jpg'
+                    location: 'http://www.corporate-eye.com/main/wp-content/uploads/2013/01/international-presentations.jpg',
                   },
                 },
               ],
