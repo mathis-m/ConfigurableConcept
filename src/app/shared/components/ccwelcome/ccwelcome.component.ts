@@ -1,15 +1,13 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {ICCResource} from '../../models/CCRresource/ICCResource';
-import {ICCWelcomeConfig} from '../../models/CCWelcome/ICCWelcomeConfig';
-import {ICCElement} from '../../models/CCBasics/ICCElement';
-import {ICCWelcome} from '../../models/CCWelcome/ICCWelcome';
-import {ICCPictureConfig} from '../../models/CCPicture/ICCPictureConfig';
-import {ICCTextConfig} from '../../models/CCBasics/CCConfig/ICCTextConfig';
+import { Component, Input, OnInit } from '@angular/core';
+import { ICCTextConfig } from '../../models/CCBasics/CCConfig/ICCTextConfig';
+import { ICCPictureConfig } from '../../models/CCPicture/ICCPictureConfig';
+import { ICCWelcome } from '../../models/CCWelcome/ICCWelcome';
+import { ICCWelcomeConfig } from '../../models/CCWelcome/ICCWelcomeConfig';
 
 @Component({
   selector: 'app-ccwelcome',
   templateUrl: './ccwelcome.component.html',
-  styleUrls: ['./ccwelcome.component.scss']
+  styleUrls: ['./ccwelcome.component.scss'],
 })
 export class CCWelcomeComponent implements OnInit, ICCWelcome {
 
@@ -21,13 +19,13 @@ export class CCWelcomeComponent implements OnInit, ICCWelcome {
     this.childConfigs = {
       sub_text: undefined,
       picture: undefined,
-      head_text: undefined
+      head_text: undefined,
     };
   }
 
   ngOnInit() {
     this.elementConfig.childElementConfigs
-      .forEach(el => {
+      .forEach((el: any) => {
         if (el.elementType === 'pic') {
           this.childConfigs.picture = el as ICCPictureConfig;
         } else {
