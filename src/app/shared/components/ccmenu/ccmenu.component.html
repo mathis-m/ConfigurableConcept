@@ -1,0 +1,13 @@
+<nav class="cc-nav">
+  <div style="order:1; color: white">
+    <h1>{{elementConfig.name}}</h1>
+  </div>
+  <ng-container *ngFor="let page of elementConfig.allowedPages">
+    <ng-container *ngIf="page.inMenu !== 'false'">
+      <div class="cc-nav-item">
+        <div [routerLink]="">{{page.pageName}}</div>
+      </div>
+    </ng-container>
+  </ng-container>
+
+</nav>
